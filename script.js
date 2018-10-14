@@ -37,14 +37,6 @@ $(document).ready(function() {
 			var alumTinScore = "";
 
 			var totalScore = "";
-      
-      var rangeslider = document.getElementById("sliderRange");
-      var output = document.getElementById("car");
-      output.innerHTML = rangeslider.value;
-
-      rangeslider.oninput = function() {
-      output.innerHTML = this.value;
-      }
 
 			if (document.getElementById("optionsRadio1").checked) {
 				newspaperScore = 0;
@@ -80,13 +72,13 @@ $(document).ready(function() {
 				oilScore = oilInput * 113;
 			}
 			// console.log("Oil score is: " + oilScore);
-            
+
 			if (carInput === 0 || carInput === "undefined") {
 				carScore = 0;
 			} else {
 				carScore = carInput * 0.79;
 			}
-			 console.log("Car score is: " + carScore);
+			// console.log("Car score is: " + carScore);
 		
 			if (flights4LessInput === 0 || flights4LessInput === "undefined") {
 				flights4LessScore = 0;
