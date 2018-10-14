@@ -3,23 +3,30 @@ body {
   background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-  background-color: lightgreen;
+  background-color: #c5e8b8;
+}
+
+#topimage {
+  border-radius: 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 100%;
 }
 
 #announcement-panel {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #announcement-header, #announcement-subheader {
 	color: white;
 	background-color: rgba(38, 77, 0, 0.7);
 	padding: 5px;
-  border-radius: 15px 15px 15px 30px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 #announcement-header {
-	font-size: 4em;
+	font-size: 3.5em;
 }
 
 #announcement-subheader {
@@ -27,23 +34,15 @@ body {
 }
 
 #form, #results {
-	padding: 40px;
+	padding: 0px;
 }
 
-#home-energy-label, .fa-home {
-	color: #FF8C00;
-}
-
-#travel-label, .fa-globe {
-	color: #008B8B;
-}
-
-#waste-label, .fa-recycle {
-	color: #228B22;
+.form-section-label {
+  color: #467634;
 }
 
 .progress-bar {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .score-info {
@@ -114,19 +113,25 @@ body {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #73AD21;
     color: white;
 }  
 
 
 .center {
     margin: auto;
+    
+    display:block;/*
+    margin-left: auto; 
+    margin-right:auto;
+    width: 50%;*/
+}
+
+#topimage {
     width: 50%;
+    margin-top: 1em;
     border: 3px solid green;
-    padding: 10px;
-    display:block;
-  margin-left: auto; 
-  margin-right:auto;
+    padding: 1em;
 }
 
 .rangeslider {
@@ -165,4 +170,8 @@ body {
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
+  }
+  .oneline {
+    display: inline-block; 
+    float: left;
   }
