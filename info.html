@@ -9,7 +9,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 <style>
   body {
     background-color: lightgreen;
@@ -29,95 +29,23 @@
 				<h3 id="announcement-subheader">How our choices impact the planet</h3>
 			</div>
 		</div>
+    <div >
+    <img class = "topimage; center" src="https://s3-eu-west-2.amazonaws.com/heart-agency-wp-v2/wp-content/uploads/2018/04/18155554/simpson_adam_nyt_carbon_footprint_03.gif" >
+  </div>
+    
+    
+    
 		<div class="row">
+      
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<div id="form">
-					<form>
-						<h3 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
+        <h3 id="home-energy-label"><i class="fa fa-home" aria-hidden="true"></i> Home Energy</h3>	
 						<p>
               Carbon footprints at home are brutal. Examples: wasting water, leaving lights on for too long, heating or using A/C when other solutions are available.
             </p>
-						<div class="form-group">
-							<label for="gas">Monthly natural gas bill</label>
-							<div class="input-group">
-								<div class="input-group-addon">$</div>
-								<input class="form-control" id="gas" type="number" min="0" step="0.01">
-							</div>
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="oil">Monthly oil bil</label>
-							<p><i>Some homes use oil as a fuel source for heating furnaces or boilers, and is often abbreviated as HHO.</i></p>
-							<div class="input-group">
-								<div class="input-group-addon">$</div>
-								<input class="form-control" id="oil" type="number" min="0" step="0.01">
-							</div>
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<br/>
-						<h3 class="form-section-label" id="travel-label"><i class="fa fa-globe" aria-hidden="true"></i> Transportation</h3>
-            
-						<div class="form-group">
-							<label for="car">miles driven by car</label>
-              
-              <div class="rangeslider">    <!--slider-->
-                <input type="range" min="0" max="100" value="10"
-                 class="myslider" id="sliderRange"> 
-              </div> 
-              
-							<input class="form-control" id="car" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="flights-4-less">Number of flights taken in the past year (4 hours or less)</label>
-							<input class="form-control" id="flights-4-less" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<div class="form-group">
-							<label for="flights-4-more">Number of flights taken in the past year (4 hours or more)</label>
-							<input class="form-control" id="flights-4-more" type="number" min="0" step="1">
-							<span class="help-block">Enter 0 if not applicable. If left blank, will default to 0.</span>
-						</div>
-						<br/>
-						<h3 class="form-section-label" id="waste-label"><i class="fa fa-recycle" aria-hidden="true"></i> Waste</h3>
-						<div class="form-group">
-							<label>Do you recycle newspaper?</label>
-							<div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Oops!</strong> You need to make a selection.</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
-									Yes
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
-									No
-								</label>
-							</div>
-						</div>
-						<div class="form-group">
-							<label>Do you recycle aluminum and tin?</label>
-							<div class="alert alert-danger" role="alert" id="alum-tin-alert"><strong>Oops!</strong> You need to make a selection.</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
-									Yes
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option4">
-									No
-								</label>
-							</div>
-						</div>
-						<br/>
-						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
-					</form>
-				</div>
+        <button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
+				
 
 				<div id="results" class="text-center">
 					<h1 id="score"></h1>

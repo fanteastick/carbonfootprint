@@ -39,7 +39,7 @@ $(document).ready(function() {
 			var totalScore = "";
       
       var rangeslider = document.getElementById("sliderRange");
-      var output = document.getElementById("demo");
+      var output = document.getElementById("car");
       output.innerHTML = rangeslider.value;
 
       rangeslider.oninput = function() {
