@@ -26,7 +26,7 @@ body {
 }
 
 #announcement-header {
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 #announcement-subheader {
@@ -52,6 +52,7 @@ body {
 
 .rangeslider {
   width: 100%;
+  padding:5px;
 }
 
 .myslider {
