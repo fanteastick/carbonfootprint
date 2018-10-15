@@ -70,7 +70,6 @@
     
                 rangeslider.oninput = function() {
                   output.innerHTML = this.value;
-                  var carValue = output.innerHTML;
                 }
                 </script>
               </div>
@@ -110,7 +109,7 @@
 							</div>
 						</div>
 						<br/>
-						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block" onclick="getElementById('demo').innerHTML=Date()">Calculate</button>
+						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block" onclick="getElementById('demo').innerHTML=calculateScore()">Calculate</button>
             <p id="demo"></p>
 					</form>
 				</div>
